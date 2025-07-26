@@ -1,0 +1,79 @@
+/* filepath: /Users/idris/Documents/tic/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: #eee;
+  margin: 0;
+}
+
+.container {
+  max-width: 340px;
+  margin: 60px auto;
+  background: #333;
+  border-radius: 8px;
+  padding: 32px 20px 20px;
+  text-align: center;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.6);
+}
+
+h1 {
+  margin-bottom: 28px;
+  letter-spacing: 2px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 8px;
+  margin: 0 auto 16px auto;
+}
+
+.cell {
+  background: #444;
+  width: 80px;
+  height: 80px;
+  font-size: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background .2s;
+}
+
+.cell:hover {
+  background: #666;
+}
+
+.cell.X { color: #ff5e5e; }
+.cell.O { color: #3ecfff; }
+.cell.winner { background: #1eae59; color: #fff; }
+
+#restartBtn {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 8px 22px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+#restartBtn:hover { background: #0053a2; }
+
+#message {
+  margin-top: 10px;
+  min-height: 20px;
+  font-size: 1.1rem;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+  font-size: .98rem;
+}
+input[type='checkbox'] {
+  accent-color: #3ecfff;
+}
